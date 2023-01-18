@@ -1,0 +1,26 @@
+{
+  "name": "js-map-set-optimize",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build-script.js",
+    "agg-map-and-find": "yarn build && node dist/aggregate/map-and-find.js",
+    "agg-lodash": "yarn build && node dist/aggregate/lodash.js",
+    "agg-reduce": "yarn build && node dist/aggregate/reduce.js",
+    "agg-map-and-get": "yarn build && node dist/aggregate/map-and-get-from-map.js",
+    "dedupe-lodash": "yarn build && node dist/dedupe/lodashUniq.js",
+    "dedupe-filter": "yarn build && node dist/dedupe/filterIndexOf.js",
+    "dedupe-set-and-map": "yarn build && node dist/dedupe/set-and-map.js",
+    "diff-filter": "yarn build && node dist/diff/filterIncludes.js",
+    "diff-lodash": "yarn build && node dist/diff/lodashDiff.js",
+    "diff-set-and-map": "yarn build && node dist/diff/set-and-map.js"
+  },
+  "dependencies": {
+    "@ngneat/falso": "^6.4.0",
+    "esbuild": "^0.17.3",
+    "falso": "^0.0.0",
+    "fast-glob": "^3.2.12",
+    "lodash": "^4.17.21"
+  }
+}
